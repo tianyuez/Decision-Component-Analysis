@@ -7,7 +7,7 @@ hold on;
 plot(threshold, zeros(length(threshold), 1),'LineWidth',4)
 hold on;
 plot(threshold, -threshold+0.5,'LineWidth',4)
-legend("Gradient Boosting", "None", "All")
+legend("Some model", "None", "All")
 xlabel("Probability threshold");
 ylabel("Net benefit");
 
