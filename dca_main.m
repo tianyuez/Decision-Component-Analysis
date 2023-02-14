@@ -1,3 +1,4 @@
+% Example dataset
 load("gb.mat");
 threshold = 0:0.01:1;
 net_benefit= dca(y_pred, y_test, threshold);
