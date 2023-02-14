@@ -1,4 +1,4 @@
-load('gb.mat');
+load("gb.mat");
 threshold = 0:0.01:1;
 net_benefit= dca(y_pred, y_test, threshold);
 plot(threshold, net_benefit,'LineWidth',4);
@@ -7,8 +7,8 @@ plot(threshold, zeros(length(threshold), 1),'LineWidth',4)
 hold on;
 plot(threshold, -threshold+0.5,'LineWidth',4)
 legend("Gradient Boosting", "None", "All")
-xlabel('Probability threshold');
-ylabel('Net benefit');
+xlabel("Probability threshold");
+ylabel("Net benefit");
 
 
 function net_benefit = dca(y_pred, y_true, thresholds_arr)
